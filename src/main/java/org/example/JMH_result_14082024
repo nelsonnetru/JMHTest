@@ -1,0 +1,88 @@
+C:\Users\user\.jdks\jdk1.8.0_422\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\lib\idea_rt.jar=57618:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\charsets.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\access-bridge-64.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\cldrdata.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\dnsns.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\jaccess.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\jfxrt.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\localedata.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\nashorn.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\sunec.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\sunjce_provider.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\sunmscapi.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\sunpkcs11.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\ext\zipfs.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\jce.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\jfr.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\jfxswt.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\jsse.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\management-agent.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\resources.jar;C:\Users\user\.jdks\jdk1.8.0_422\jre\lib\rt.jar;C:\gb\wfe\JMHTest\JMHTest\target\classes;C:\Users\user\.m2\repository\org\openjdk\jmh\jmh-core\1.37\jmh-core-1.37.jar;C:\Users\user\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\user\.m2\repository\org\openjdk\jmh\jmh-generator-annprocess\1.37\jmh-generator-annprocess-1.37.jar;C:\Users\user\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar org.example.App
+# JMH version: 1.37
+# VM version: JDK 1.8.0_422, OpenJDK 64-Bit Server VM, 25.422-b05
+# VM invoker: C:\Users\user\.jdks\jdk1.8.0_422\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\lib\idea_rt.jar=57618:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.App.getTemplateValue
+
+# Run progress: 0,00% complete, ETA 00:00:24
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 2289541,364 ns/op
+# Warmup Iteration   2: 1836883,394 ns/op
+# Warmup Iteration   3: 1183869,754 ns/op
+Iteration   1: 1187411,723 ns/op
+Iteration   2: 1215202,306 ns/op
+Iteration   3: 1019999,496 ns/op
+
+# Run progress: 25,00% complete, ETA 00:00:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 1334627,690 ns/op
+# Warmup Iteration   2: 1187953,365 ns/op
+# Warmup Iteration   3: 1102612,431 ns/op
+Iteration   1: 1102520,549 ns/op
+Iteration   2: 1061885,079 ns/op
+Iteration   3: 1073449,947 ns/op
+
+
+Result "org.example.App.getTemplateValue":
+  1079285,192 ±(99.9%) 381964,444 ns/op [Average]
+  (min, avg, max) = (1061885,079, 1079285,192, 1102520,549), stdev = 20936,760
+  CI (99.9%): [697320,748, 1461249,636] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 1.8.0_422, OpenJDK 64-Bit Server VM, 25.422-b05
+# VM invoker: C:\Users\user\.jdks\jdk1.8.0_422\jre\bin\java.exe
+# VM options: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\lib\idea_rt.jar=57618:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\bin -Dfile.encoding=UTF-8
+# Blackhole mode: full + dont-inline hint (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 3 iterations, 1 s each
+# Measurement: 3 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.App.getTemplateValueFast
+
+# Run progress: 50,00% complete, ETA 00:00:14
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 280832,190 ns/op
+# Warmup Iteration   2: 214997,332 ns/op
+# Warmup Iteration   3: 186826,669 ns/op
+Iteration   1: 206775,313 ns/op
+Iteration   2: 193196,913 ns/op
+Iteration   3: 220967,113 ns/op
+
+# Run progress: 75,00% complete, ETA 00:00:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 283552,189 ns/op
+# Warmup Iteration   2: 215600,637 ns/op
+# Warmup Iteration   3: 185770,766 ns/op
+Iteration   1: 185417,796 ns/op
+Iteration   2: 186187,278 ns/op
+Iteration   3: 186351,765 ns/op
+
+
+Result "org.example.App.getTemplateValueFast":
+  185985,613 ±(99.9%) 9095,847 ns/op [Average]
+  (min, avg, max) = (185417,796, 185985,613, 186351,765), stdev = 498,574
+  CI (99.9%): [176889,765, 195081,460] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:00:29
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                 Mode  Cnt        Score        Error  Units
+App.getTemplateValue      avgt    3  1079285,192 ± 381964,444  ns/op
+App.getTemplateValueFast  avgt    3   185985,613 ±   9095,847  ns/op
+
+Process finished with exit code 0

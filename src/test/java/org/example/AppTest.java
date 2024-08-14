@@ -7,8 +7,8 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
+        extends TestCase
 {
     /**
      * Create the test case
@@ -28,18 +28,11 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
     public void testApp()
     {
         App app = new App();
-        app.setup();
-        System.out.println("getTemplateValue(): \n" + app.getTemplateValue() + "\n\n");
-        System.out.println("getTemplateValueFast(): \n" + app.getTemplateValueFast()+ "\n\n");
-        System.out.println("resultString: \n" + app.getResultString());
+        App.TemplateModel arg0 = new App.TemplateModel();
+        assertEquals(app.getTemplateValueFast(arg0), app.getTemplateValue(arg0));
 
-        assertEquals(app.getResultString(), app.getTemplateValue());
-        assertEquals(app.getResultString(), app.getTemplateValueFast());
     }
 }
